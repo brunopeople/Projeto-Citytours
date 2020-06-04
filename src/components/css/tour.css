@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #222; }
+
+.tour img {
+  width: 100%;
+  display: block;
+  min-height: 13rem; }
+
+/*# sourceMappingURL=tour.css.map */
