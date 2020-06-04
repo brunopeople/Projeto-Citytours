@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Tour from "../Tour";
 import "./tourlist.scss";
-
+import { tourData } from "../../tourData";
 
 export default class Tourlist extends Component { 
 
@@ -12,7 +12,11 @@ export default class Tourlist extends Component {
 
 // método que faz a remoção do elemento array do tourData
 	removeTour = id => {
-		console.log(id);
+		const { tours } = this.state;
+		const sortedTours = tours.filter(tour => tour.id !== id );
+		this.setState({
+			tours: sortedTours
+		});
 	};
 
 	render(){
